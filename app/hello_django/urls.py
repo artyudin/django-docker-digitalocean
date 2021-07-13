@@ -6,7 +6,7 @@ from django.http import JsonResponse
 
 
 def home(request):
-    return JsonResponse({"hello": "huy"})
+    return JsonResponse({"hello": "huy ihdliq"})
 
 
 urlpatterns = [
@@ -16,3 +16,4 @@ urlpatterns = [
 
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
