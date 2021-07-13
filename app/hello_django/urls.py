@@ -6,12 +6,12 @@ from django.http import JsonResponse
 
 
 def home(request):
-    return JsonResponse({"hello": "world"})
+    return JsonResponse({"hello": "huy"})
 
 
 urlpatterns = [
-    path('', home, name='home'),
-    path('admin/', admin.site.urls),
+    path("", home, name="home"),
+    path("admin/", admin.site.urls),
 ]
 
 if bool(settings.DEBUG):
